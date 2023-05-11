@@ -20,10 +20,7 @@ pipeline {
             }
 
             post {
-                // If Maven was able to run the tests, even if some of the test
-                // failed, record the test results and archive the jar file.
                 success {
-                    junit '**/trab5/target/surefire-reports/TEST-*.xml'
                     archiveArtifacts 'trab5/target/*.jar'
                 }
             }
