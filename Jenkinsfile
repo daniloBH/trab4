@@ -21,7 +21,7 @@ pipeline {
 
             post {
                 success {
-                    archiveArtifacts 'trab5/target/*.jar'
+                    archiveArtifacts 'target/*.jar'
                 }
             }
         }
